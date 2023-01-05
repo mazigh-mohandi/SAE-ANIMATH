@@ -1,6 +1,12 @@
-DROP DATABASE IF EXISTS Animath;
+DROP TABLE IF EXISTS Exposants;
+DROP TABLE IF EXISTS Creneaux;
+DROP TABLE IF EXISTS Reservations;
+DROP TABLE IF EXISTS Classes;
+DROP TABLE IF EXISTS Superviseurs;
+DROP TABLE IF EXISTS Profs;
 
-CREATE DATABASE Animath;
+
+
 
 CREATE TABLE Profs
     (
@@ -8,7 +14,6 @@ CREATE TABLE Profs
         nomProf VARCHAR(50),
         prenomProf VARCHAR(50),
         mail VARCHAR(50),
-        tel VARCHAR(10),
         mdp VARCHAR(50),
         etablissement VARCHAR (50),
         ville VARCHAR(50),
@@ -28,7 +33,6 @@ CREATE TABLE Superviseurs
         nomSuper VARCHAR (20),
         prenomSuper VARCHAR(30),
         mail VARCHAR(50),
-        tel VARCHAR(10),
         mdp VARCHAR(10)
     );
 
@@ -74,6 +78,3 @@ ALTER TABLE Reservations
 
 ALTER TABLE Creneaux
     ADD FOREIGN KEY(id_res) REFERENCES Reservations(id_res);
-
-  ALTER TABLE Classes
-    ADD FOREIGN KEY (niveau) REFERENCES Profs (niveau);
