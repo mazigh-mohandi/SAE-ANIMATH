@@ -10,26 +10,26 @@ DROP TABLE IF EXISTS Profs;
 
 CREATE TABLE Profs
     (
-        id_prof VARCHAR(5) PRIMARY KEY,
+        id_prof INT PRIMARY KEY,
         nomProf VARCHAR(50),
         prenomProf VARCHAR(50),
-        mail VARCHAR(50),
-        mdp VARCHAR(50),
         etablissement VARCHAR (50),
+        niveau VARCHAR (50),
         ville VARCHAR(50),
-        niveau VARCHAR (50)
+        mail VARCHAR(50),
+        mdp VARCHAR(50)
     );
 
 CREATE TABLE Classes
     (
-        id_classe VARCHAR(5) PRIMARY KEY,
-        id_prof VARCHAR(5),
+        id_classe INT PRIMARY KEY,
+        id_prof INT,
         niveau VARCHAR(50),
         nb_eleves INT
     );
 
 CREATE TABLE Superviseurs
-    (   id_super VARCHAR(5) PRIMARY KEY,
+    (   id_super INT PRIMARY KEY,
         nomSuper VARCHAR (20),
         prenomSuper VARCHAR(30),
         mail VARCHAR(50),
@@ -38,8 +38,8 @@ CREATE TABLE Superviseurs
 
 CREATE TABLE Exposants
     (
-        id_expo VARCHAR(5) PRIMARY KEY,
-        id_super VARCHAR(5),
+        id_expo INT PRIMARY KEY,
+        id_super INT,
         nomExposant VARCHAR(30),
         heure_ouvert TIME,
         heure_ferme TIME,
@@ -50,15 +50,15 @@ CREATE TABLE Exposants
 
 CREATE TABLE Reservations
     (
-        id_res VARCHAR(5) PRIMARY KEY,
-        id_personne VARCHAR(5),
+        id_res INT PRIMARY KEY,
+        id_personne INT,
         nb_participants INT
     );
 
 CREATE TABLE Creneaux
     (
-        id_creneaux VARCHAR(5) PRIMARY KEY,
-        id_res VARCHAR(5),
+        id_creneaux INT PRIMARY KEY,
+        id_res INT,
         date_res DATE,
         heure_debut TIME,
         heure_fin TIME

@@ -1,0 +1,30 @@
+
+   <section>
+       <h1> Inscription Professeurs </h1>
+       <form action="Inscription(prof).php" method="POST">   
+           <label>Nom</label>
+           <input type="Text" name="NomP" placeholder="Nom">
+           <label>Prénom</label>
+           <input type="Text" name="PrenomP" placeholder="Prénom">
+           <label>Etablissement</label>
+           <input type="Text" name="etablissementP" placeholder="Etablissement">
+           <label>Niveau Scolaire</label>
+           <input type="Text" name="niveauP" placeholder="Niveau Scolaire">
+           <label>Ville</label>
+           <input type="Text" name="villeP" placeholder="Ville">
+           <label>Adresse e-mail</label>
+           <input type="text" name="emailP" placeholder="Adresse mail">
+           <label>Mot de passe</label>
+           <input type="password" name="mdpP" placeholder="Mot de passe">
+           <label>Confirmez votre mot de passe</label>
+           <input type="password" name="mdp2P" placeholder="Confirmez votre mot de passe">
+           <div class="cond">
+                <input type="checkbox" id="conditions" name="cguP" value="conditions">
+                <label for="conditions"><span>J'ai lu et j'accepte les conditions d'utilisation</span></label>
+           </div>
+           <input type="submit" value="S'inscrire" name="boutton-valider">
+           <p class ="inscr">Avez-vous deja un compte ? <a href ="../Connexion/Connexion.php"> <span>Connectez-vous</span></a></p>
+       </form>
+   </section> 
+</body>
+</html>

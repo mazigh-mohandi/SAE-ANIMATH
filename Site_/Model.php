@@ -27,6 +27,78 @@ class Model
         }
     
     
-    public function formulaire_super(){}
+    public function formulaire_super($nom,$prenom,$email,$mdp)
+    {
+        $id_super=1;
+        
+        $i=1;
+        $pwd=password_hash('$mdp',PASSWORD_DEFAULT);
+        while ($i==1)
+        {
+            $id_super_Exist = $this->bd->prepare("SELECT id_super FROM Superviseurs WHERE id_super = :id_super");
+            
+            $id_super_Exist->bindValue(':id_super', $id_super, PDO::PARAM_INT);
+            $id_super_Exist->execute();
+            //on exécute la requête
+            
+            $i= id_super_Exist->rowCount();
+            
+            if($i == 1)
+            {
+                
+                $id_super++;
+                
+
+            }
+            else
+            {
+                
+                
+                $req=  $this->bd->prepare("INSERT INTO Superviseurs SET id_super='$id_super',nomSuper='$nom',prenomSuper='$prenom',mail='$email',mdp='$pwd'");
+                $req->execute();
+                $i=2;
+            }
+        
+            
+        }
     }
+
+
+    public function formulaire_prof($nom,$prenom,$etablissement,$niveau,$ville,$email,$mdp)
+    {
+        $id_prof=1;
+        
+        $i=1;
+        $pwd=password_hash('$mdp',PASSWORD_DEFAULT);
+        while ($i==1)
+        {
+            $id_prof_Exist = $this->bd->prepare("SELECT id_prof FROM Profs WHERE id_prof = :id_prof");
+            
+            $id_prof_Exist->bindValue(':id_prof', $id_prof, PDO::PARAM_INT);
+            $id_prof_Exist->execute();
+            
+            
+            $i= $id_prof_Exist->rowCount();
+            
+            if($i == 1)
+            {
+                echo"id_prof existe";
+                $id_super++;
+                
+
+            }
+            else
+            {
+                echo"id_prof existe pas";
+                
+                $req=  $this->bd->prepare("INSERT INTO Profs SET id_prof='$id_prof',nomProf='$nom',prenomProf='$prenom',etablissement='$etablissement',niveau='$niveau',ville='$ville',mail='$email',mdp='$pwd'");
+                $req->execute();
+                $i=2;
+            }
+        
+            
+        }
+    }
+
+}
 ?>
