@@ -2,73 +2,79 @@
   require "debut_html.html";
 ?>
 <?php  
-require_once ('/xampp/htdocs/SAE-ANIMATH-main/Site_/Model.php');
+require_once ('../Model/Model.php');
 $m = Model::getModel();
 
 
 //par défaut, on affiche le formulaire (quand il validera le formulaire sans erreur avec l'inscription validée, on l'affichera plus)
 $AfficherFormulaire=1;
+
+//initialisation de variables d'erreurs 
+//on leur donne une valeur nulle par défaut, si le champ est vide alors un msg d'erreur s'affichera
+$nomErr = ""; $prenomErr = ""; $etabErr = ""; $nivErr = ""; $villeErr = ""; 
+$mailErr = ""; $mdpErr = ""; $mdp2Err = ""; $cguErr = "";
+
 //traitement du formulaire:
 if(isset($_POST['NomP'],$_POST['PrenomP'],$_POST['etablissementP'],$_POST['niveauP'],$_POST['villeP'],$_POST['emailP'],$_POST['mdpP'],$_POST['mdp2P']))
     {
 
     if(empty($_POST['NomP']))
         {
-        echo "Le champ Nom est vide.";
+            $nomErr = 'Le champ "Nom" est vide';
         } 
     
     elseif(empty($_POST['PrenomP']))
         {
-        echo "Le champ Prenom est vide.";
+            $prenomErr = 'Le champ "Prénom" est vide.';
         } 
     elseif(empty($_POST['etablissementP']))
         {
-        echo "Le champ Etablissement est vide.";
+            $etabErr = 'Le champ "Etablissement" est vide.';
         }
     elseif(empty($_POST['niveauP']))
         {
-        echo "Le champ Niveau Scolaire est vide.";
+            $nivErr = 'Le champ "Niveau Scolaire" est vide.';
         }  
     elseif(empty($_POST['villeP']))
         {
-        echo "Le champ Ville  est vide.";
+            $villeErr = 'Le champ "Ville" est vide.';
         }  
 
     elseif(empty($_POST['emailP']))
         {
-            echo "Le champ Adresse mail est vide ";
+            $mailErr = 'Le champ "Adresse mail" est vide ';
         }
     elseif(empty($_POST['mdpP']))
         {
-                echo "Le champ Mot de Passe est vide";
+            $mdpErr = 'Le champ "Mot de Passe" est vide';
         }
 
         
     elseif(empty($_POST['mdp2P']))
         {
-            echo"Le champ Confirmez votre mot de passe est vide";
+            $mdp2Err = 'Le champ "Confirmez votre mot de passe" est vide';
         }
     
         
         
     elseif (!preg_match("#^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$#",$_POST['emailP']))
         {
-            echo"L'adresse mail n'est pas valide";
+            $mailErr = "L'adresse mail n'est pas valide";
         }
     elseif(($_POST['mdpP'] != $_POST['mdp2P']))
         {
-            echo"Les mots de passe ne correspondent pas";
+            $mdp2Err = "Les mots de passe ne correspondent pas";
         }
     elseif (isset($_POST['cguP'])) 
     {
         $Insert_into = $m->formulaire_prof($_POST['NomP'],$_POST['PrenomP'],$_POST['etablissementP'],$_POST['niveauP'],$_POST['villeP'],$_POST['emailP'],$_POST['mdpP'],$_POST['mdp2P']);
-        echo"Vous etes inscrit avec succes!";
+        echo "Vous êtes inscrit avec succès! &nbsp; <a href='../Accueil/Accueil.html'>Retourner à l'accueil</a>";
         $AfficherFormulaire=0;
     }
     
     else
         {
-            echo"Veuillez acceptez cgu";
+            $cguErr = "Veuillez acceptez les Conditions Générales d'Utilisation";
 
         }
     }
@@ -77,6 +83,6 @@ if(isset($_POST['NomP'],$_POST['PrenomP'],$_POST['etablissementP'],$_POST['nivea
 
 if($AfficherFormulaire==1)
 {
-    require "fin_html.html";
+    require "fin_html.php";
 }
     ?>
