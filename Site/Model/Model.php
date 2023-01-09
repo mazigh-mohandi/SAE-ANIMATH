@@ -89,6 +89,23 @@ class Model
             
         }
     }
+    
+    
+    
+    public function connexion($email,$mdp)
+    {
+        $super = $this->bd->prepare("SELECT * FROM Superviseurs WHERE mail = '".$email."' AND mdp = '".$mdp."'");
+        $super->execute();
+        $prof = $this->bd->prepare("SELECT * FROM Profs WHERE mail = '".$email."' AND mdp = '".$mdp."'");
+        $prof->execute();
+
+        if(($prof->rowCount() == 0) and ($super->rowCount() == 0)){
+            $mailErr = "L'email ou le mot de passe est incorrect, le compte n'a pas été trouvé.";
+        } else {
+            $_SESSION['email'] = $email;
+            echo "Vous êtes à présent connecté! &nbsp; <a href='../Accueil/Accueil.html'>Retourner à l'accueil</a>";
+            }
+    }
 
 }
 ?>
