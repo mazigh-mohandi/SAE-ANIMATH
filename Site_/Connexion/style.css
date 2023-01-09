@@ -1,0 +1,119 @@
+* {
+    margin:0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: rgba(0, 0, 0, 0.5) url('../images/f3.png');
+    background-size: 100%;
+  
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 0 20px 15px 15px;
+    background: radial-gradient(#fff, #7fc3d4);
+    font-weight: bold;
+    height: 65px;
+}
+
+.logo img{
+    height: 80px;
+    width: 150px;
+    margin-left: 5px;
+  
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+
+.container2{
+    position: absolute;
+    margin-left: 60%;
+    margin-bottom: 5px ;
+    width: 440px;
+    height: 550px;
+    background-color: rgb(255, 255, 255);
+}
+
+.container2 h1{
+    color: rgb(2, 2, 2);
+    margin-top: 40px;
+    margin-left: 50px;
+}
+.container2 h4{
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 15px;
+}
+.container2 a {
+    color: rgb(22, 83, 212);
+    text-decoration: none;
+}
+
+
+
+input{
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 320px;
+    height: 47px;
+    background-color: rgb(255, 247, 247);
+    border-radius: 3px;
+    border: 1px solid#000;
+    font-size: 15px;
+    padding : 5px;
+}
+
+.c1 a{ 
+    position: absolute;
+    margin-top: 40px;
+    font-size: 15px;
+    margin-left: 55px;
+    text-decoration: none;
+    color: rgb(22, 83, 212);
+    
+
+}
+
+input::placeholder{
+    font-size: 17px;
+    margin-left: 15px;
+    padding: 12px;
+}
+
+input[type=submit]{
+    width: 320px;
+    height: 45px;
+    background-color: rgb(22, 83, 212);
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+
+
+
+.content{
+    position: absolute;
+    margin-top: 100px;
+    font-size: 9px;
+    margin-left: 55px;
+}
+
+.content p{
+    color: rgb(125, 119, 119);
+    font-size: 15px;
+}
+.content a  {
+    text-decoration: none;
+    color: rgb(22, 83, 212);
+}

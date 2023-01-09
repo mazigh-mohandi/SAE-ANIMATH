@@ -1,30 +1,31 @@
+<div class="logo">
+    <a href="../accueil/accueil.html"><img src="../images/logo.png" alt="Logo Animath"></a>
+</div>  
 
-   <section>
-       <h1> Inscription Professeurs </h1>
-       <form action="Inscription(prof).php" method="POST">   
-           <label>Nom</label>
-           <input type="Text" name="NomP" placeholder="Nom">
-           <label>Prénom</label>
-           <input type="Text" name="PrenomP" placeholder="Prénom">
-           <label>Etablissement</label>
-           <input type="Text" name="etablissementP" placeholder="Etablissement">
-           <label>Niveau Scolaire</label>
-           <input type="Text" name="niveauP" placeholder="Niveau Scolaire">
-           <label>Ville</label>
-           <input type="Text" name="villeP" placeholder="Ville">
-           <label>Adresse e-mail</label>
-           <input type="text" name="emailP" placeholder="Adresse mail">
-           <label>Mot de passe</label>
-           <input type="password" name="mdpP" placeholder="Mot de passe">
-           <label>Confirmez votre mot de passe</label>
-           <input type="password" name="mdp2P" placeholder="Confirmez votre mot de passe">
-           <div class="cond">
-                <input type="checkbox" id="conditions" name="cguP" value="conditions">
-                <label for="conditions"><span>J'ai lu et j'accepte les conditions d'utilisation</span></label>
-           </div>
-           <input type="submit" value="S'inscrire" name="boutton-valider">
-           <p class ="inscr">Avez-vous deja un compte ? <a href ="../Connexion/Connexion.php"> <span>Connectez-vous</span></a></p>
-       </form>
-   </section> 
+<div class="container2">
+    <h4><a href =../accueil/accueil.html>Revenir à la page d'accueil</a></h4>
+    <h1>S'inscrire</h1>
+    <div class="form">
+        <input type="Text" name="Nom" placeholder="Nom">
+        <input type="Text" placeholder="Prénom">
+        <input type="Text" name="Nom" placeholder="Etablissement">
+        <input type="Text" name="Nom" placeholder="Niveau scolaire">
+        <input type="Text" name="Nom" placeholder="Ville">
+        <input type="email" placeholder="Adresse email">
+        <input type="password" placeholder="Mot de passe">
+        <input type="password" placeholder="Confirmez votre mot de passe">
+        <input type="submit" value="S'inscrire">
+    </div>
+
+    <div class="cg">
+        <input type="checkbox" id="conditions" name="cgu" value="conditions">
+        <label for="conditions">J'ai lu et j'accepte les conditions d'utilisation</label>
+        
+    </div>
+
+    <div class="content">
+        <p>Vous avez déja un compte ? <a href="../Connexion/Connexion.html">Se connecter</a> </p> <br>
+    </div>
+</div>   
 </body>
 </html>

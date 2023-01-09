@@ -1,24 +1,28 @@
+<div class="logo">
+    <a href="accueil.html"><img src="../images/logo.png" alt="Logo Animath"></a>
+</div>  
 
-   <section>
-       <h1> Inscription Superviseurs</h1>
-       <form action="Inscription(super).php" method="POST">   
-           <label>Nom</label>
-           <input type="Text" name="Nom" placeholder="Nom">
-           <label>Prénom</label>
-           <input type="Text" name="Prenom" placeholder="Prénom">
-           <label>Adresse e-mail</label>
-           <input type="Text" name="email" placeholder="Adresse mail">
-           <label>Mot de passe</label>
-           <input type="password" name="mdp" placeholder="Mot de Passe">
-           <label>Confirmez votre mot de passe</label>
-           <input type="password" name="mdp2" placeholder="Confirmez votre mot de passe">
-           <div class="cond">
-                <input type="checkbox" id="conditions" name="cgu" value="conditions">
-                <label for="conditions"><span>J'ai lu et j'accepte les conditions d'utilisation</span></label>
-           </div>
-           <input type="submit" value="S'inscrire" name="boutton-valider">
-           <p class ="inscr">Avez-vous deja un compte ? <a href ="../Connexion/Connexion.php"> <span>Connectez-vous</span></a></p>
-       </form>
-   </section> 
+<div class="container2">
+    <h4><a href =../accueil/accueil.html>Revenir à la page d'accueil</a></h4>
+    <h1>S'inscrire</h1>
+    <div class="form">
+        <input type="Text" name="Nom" placeholder="Nom">
+        <input type="Text" placeholder="Prénom">
+        <input type="email" placeholder="Adresse email">
+        <input type="password" placeholder="Mot de passe">
+        <input type="password" placeholder="Confirmez votre mot de passe">
+        <input type="submit" value="S'inscrire">
+    </div>
+
+    <div class="cg">
+        <input type="checkbox" id="conditions" name="cgu" value="conditions">
+        <label for="conditions">J'ai lu et j'accepte les conditions d'utilisation</label>
+        
+    </div>
+
+    <div class="content">
+        <p>Vous avez déja un compte ? <a href="../Connexion/Connexion.html">Se connecter</a> </p> <br>
+    </div>
+</div>   
 </body>
 </html>
