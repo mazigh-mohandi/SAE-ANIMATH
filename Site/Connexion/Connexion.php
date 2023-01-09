@@ -30,25 +30,6 @@ if(isset($_POST['connexion'])){
         // MANQUE: MODEL
 
             $connexion = $m->connexion($email,$mdp) ;
-
-            //on se connecte à la base de données:
-            //$mysqli = mysqli_connect("domaine.tld", "nom d'utilisateur", "mot de passe", "base de données");
-            //on vérifie que la connexion s'effectue correctement:
-            //if(!$mysqli){
-            //    echo "Erreur de connexion à la base de données.";
-            //} else {
-                //on fait maintenant la requête dans la base de données pour rechercher si ces données existent et correspondent:
-                //si vous avez enregistré le mot de passe en md5() il vous faudra faire la vérification en mettant mdp = '".md5($MotDePasse)."' au lieu de mdp = '".$MotDePasse."'
-            //    $Requete = mysqli_query($mysqli,"SELECT * FROM membres WHERE mail = '".$Email."' AND mdp = '".$MotDePasse."'");
-                //si il y a un résultat, mysqli_num_rows() nous donnera alors 1
-                //si mysqli_num_rows() retourne 0 c'est qu'il a trouvé aucun résultat
-            //    if(mysqli_num_rows($Requete) == 0) {
-            //CETTE LIGNE EST BONNE        $mailErr = "L'email ou le mot de passe est incorrect, le compte n'a pas été trouvé.";
-            //    } else {
-            //        $_SESSION['email'] = $Email;
-            //CETTE LIGNE EST BONNE        echo "Vous êtes à présent connecté! &nbsp; <a href='../Accueil/Accueil.html'>Retourner à l'accueil</a>";
-            //}
-            //}
         }
     }
 }
