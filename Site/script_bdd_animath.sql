@@ -1,12 +1,10 @@
+DROP TABLE IF EXISTS Stand;
 DROP TABLE IF EXISTS Exposants;
 DROP TABLE IF EXISTS Creneaux;
 DROP TABLE IF EXISTS Reservations;
 DROP TABLE IF EXISTS Classes;
 DROP TABLE IF EXISTS Superviseurs;
 DROP TABLE IF EXISTS Profs;
-
-
-
 
 
 CREATE TABLE Profs
@@ -65,9 +63,9 @@ CREATE TABLE Creneaux
         heure_fin TIME
     );
 
-
-    CREATE TABLE stand (
-      id_stand AUTO_INCREMENT INT PRIMARY KEY,
+CREATE TABLE Stand 
+    (
+      id_stand INT AUTO_INCREMENT PRIMARY KEY,
       id_expo INT,
       nom VARCHAR(255) NOT NULL,
       description TEXT,
@@ -77,7 +75,7 @@ CREATE TABLE Creneaux
       inters TIME,
       nbex_j INT,
       nbex_v INT
-  );
+    );
 
 ALTER TABLE Classes
     ADD FOREIGN KEY(id_prof) REFERENCES Profs(id_prof);
