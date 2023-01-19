@@ -8,6 +8,7 @@ DROP TABLE IF EXISTS Profs;
 
 
 
+
 CREATE TABLE Profs
     (
         id_prof INT PRIMARY KEY,
@@ -17,7 +18,7 @@ CREATE TABLE Profs
         niveau VARCHAR (50),
         ville VARCHAR(50),
         mail VARCHAR(50),
-        mdp VARCHAR(5000)
+        mdp VARCHAR(50)
     );
 
 CREATE TABLE Classes
@@ -33,7 +34,7 @@ CREATE TABLE Superviseurs
         nomSuper VARCHAR (20),
         prenomSuper VARCHAR(30),
         mail VARCHAR(50),
-        mdp VARCHAR(5000)
+        mdp VARCHAR(10)
     );
 
 CREATE TABLE Exposants
@@ -64,6 +65,20 @@ CREATE TABLE Creneaux
         heure_fin TIME
     );
 
+
+    CREATE TABLE stand (
+      id_stand AUTO_INCREMENT INT PRIMARY KEY,
+      id_expo INT,
+      nom VARCHAR(255) NOT NULL,
+      description TEXT,
+      capacite INT,
+      journee BOOLEAN,
+      duree TIME,
+      inters TIME,
+      nbex_j INT,
+      nbex_v INT
+  );
+
 ALTER TABLE Classes
     ADD FOREIGN KEY(id_prof) REFERENCES Profs(id_prof);
 
@@ -78,3 +93,6 @@ ALTER TABLE Reservations
 
 ALTER TABLE Creneaux
     ADD FOREIGN KEY(id_res) REFERENCES Reservations(id_res);
+
+ALTER TABLE Stand
+    ADD FOREIGN KEY (id_expo) REFERENCES Exposants(id_expo);
