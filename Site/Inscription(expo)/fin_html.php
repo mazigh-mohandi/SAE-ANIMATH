@@ -1,7 +1,7 @@
 <div class="container2">
     <h4><a href ="../Accueil/accueil.php">Revenir à la page d'accueil</a></h4>
 
-    <h1>S'inscrire</h1>
+    <h1>Inscrire un exposant</h1>
     <!-- Ne pas toucher aux <span class="err">, ça sert à afficher les erreurs et c'est pour faire 
         marcher le php 
         Ne pas changer les name, sinon ça fera des erreurs dans le php-->
