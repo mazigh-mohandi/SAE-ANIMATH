@@ -13,10 +13,10 @@
   "Nombre d'animateurs par jour  [samedi]": 2,
   "Nombre d'animateurs par jour  [dimanche]": 2,
   "9h - 18h": "oui",
-  "Durée": 45,
+  "Durée": "00:45:00",
   "Temps intersession": 0,
   "Pause déjeuner - début": "12:45:00 PM",
-  "Pause déjeuner - fin": "1:30:00 PM"
+  "Pause déjeuner - fin": "13:30:00 PM"
  },
  {
   "Horodateur": "13\/12\/2022 19:32:43",
@@ -31,7 +31,7 @@
   "Nombre d'animateurs par jour  [samedi]": 1,
   "Nombre d'animateurs par jour  [dimanche]": 1,
   "9h - 18h": "oui",
-  "Durée": 30,
+  "Durée": "00:30:00",
   "Temps intersession": 0,
   "Pause déjeuner - début": "12:00:00 PM",
   "Pause déjeuner - fin": "12:30:00 PM"
@@ -49,10 +49,10 @@
   "Nombre d'animateurs par jour  [samedi]": 2,
   "Nombre d'animateurs par jour  [dimanche]": 2,
   "9h - 18h": "oui",
-  "Durée": 30,
-  "Temps intersession": 15,
-  "Pause déjeuner - début": "1:00:00 PM",
-  "Pause déjeuner - fin": "2:00:00 PM"
+  "Durée": "00:30:00",
+  "Temps intersession": "00:15:00",
+  "Pause déjeuner - début": "13:00:00 PM",
+  "Pause déjeuner - fin": "14:00:00 PM"
  },
  {
   "Horodateur": "14\/12\/2022 11:28:01",
@@ -67,7 +67,7 @@
   "Nombre d'animateurs par jour  [samedi]": 1,
   "Nombre d'animateurs par jour  [dimanche]": 1,
   "9h - 18h": "oui",
-  "Durée": 45,
+  "Durée": "00:45:00",
   "Temps intersession": 0,
   "Pause déjeuner - début": "12:00:00 PM",
   "Pause déjeuner - fin": "12:00:00 PM",
@@ -86,10 +86,10 @@
   "Nombre d'animateurs par jour  [samedi]": 2,
   "Nombre d'animateurs par jour  [dimanche]": 2,
   "9h - 18h": "oui",
-  "Durée": 30,
+  "Durée": "00:30:00",
   "Temps intersession": 0,
   "Pause déjeuner - début": "12:30:00 PM",
-  "Pause déjeuner - fin": "1:30:00 PM"
+  "Pause déjeuner - fin": "13:30:00 PM"
  },
  {
   "Horodateur": "15\/12\/2022 15:26:13",
@@ -104,10 +104,10 @@
   "Nombre d'animateurs par jour  [samedi]": 2,
   "Nombre d'animateurs par jour  [dimanche]": 3,
   "9h - 18h": "oui",
-  "Durée": 45,
-  "Temps intersession": 15,
+  "Durée": "00:45:00",
+  "Temps intersession": "00:15:00",
   "Pause déjeuner - début": "12:30:00 PM",
-  "Pause déjeuner - fin": "2:00:00 PM"
+  "Pause déjeuner - fin": "14:00:00 PM"
  },
  {
   "Horodateur": "19\/12\/2022 09:58:05",
@@ -122,10 +122,10 @@
   "Nombre d'animateurs par jour  [samedi]": 2,
   "Nombre d'animateurs par jour  [dimanche]": 2,
   "9h - 18h": "oui",
-  "Durée": 30,
-  "Temps intersession": 30,
+  "Durée": "00:30:00",
+  "Temps intersession": "00:30:00",
   "Pause déjeuner - début": "12:00:00 PM",
-  "Pause déjeuner - fin": "1:30:00 PM"
+  "Pause déjeuner - fin": "13:30:00 PM"
  },
 
  {
@@ -141,10 +141,10 @@
   "Nombre d'animateurs par jour  [samedi]": 1,
   "Nombre d'animateurs par jour  [dimanche]": 1,
   "9h - 18h": "oui",
-  "Durée": 30,
+  "Durée": "00:30:00",
   "Temps intersession": 0,
   "Pause déjeuner - début": "12:00:00 PM",
-  "Pause déjeuner - fin": "1:00:00 PM"
+  "Pause déjeuner - fin": "13:00:00 PM"
  },
  {
   "Horodateur": "22\/12\/2022 17:08:25",
@@ -159,10 +159,10 @@
   "Nombre d'animateurs par jour  [samedi]": 2,
   "Nombre d'animateurs par jour  [dimanche]": 2,
   "9h - 18h": "oui",
-  "Durée": 45,
-  "Temps intersession": 15,
-  "Pause déjeuner - début": "1:00:00 PM",
-  "Pause déjeuner - fin": "2:00:00 PM"
+  "Durée": "00:45:00",
+  "Temps intersession": "00:15:00",
+  "Pause déjeuner - début": "13:00:00 PM",
+  "Pause déjeuner - fin": "14:00:00 PM"
  },
  {
   "Horodateur": "30\/12\/2022 01:55:24",
@@ -177,10 +177,10 @@
   "Nombre d'animateurs par jour  [samedi]": 1,
   "Nombre d'animateurs par jour  [dimanche]": 1,
   "9h - 18h": "oui",
-  "Durée": 30,
-  "Temps intersession": 15,
-  "Pause déjeuner - début": "1:01:00 PM",
-  "Pause déjeuner - fin": "2:00:00 PM"
+  "Durée": "00:30:00",
+  "Temps intersession": "00:15:00",
+  "Pause déjeuner - début": "13:01:00 PM",
+  "Pause déjeuner - fin": "14:00:00 PM"
  },
  {
   "Horodateur": "30\/12\/2022 11:44:57",
@@ -195,10 +195,10 @@
   "Nombre d'animateurs par jour  [samedi]": 1,
   "Nombre d'animateurs par jour  [dimanche]": 1,
   "9h - 18h": "oui",
-  "Durée": 30,
+  "Durée": "00:30:00",
   "Temps intersession": 0,
   "Pause déjeuner - début": "12:30:00 PM",
-  "Pause déjeuner - fin": "1:00:00 PM"
+  "Pause déjeuner - fin": "13:00:00 PM"
  },
  {
   "Horodateur": "30\/12\/2022 13:16:56",
@@ -213,10 +213,10 @@
   "Nombre d'animateurs par jour  [samedi]": 3,
   "Nombre d'animateurs par jour  [dimanche]": 3,
   "9h - 18h": "oui",
-  "Durée": 30,
-  "Temps intersession": 15,
+  "Durée": "00:30:00",
+  "Temps intersession": "00:15:00",
   "Pause déjeuner - début": "12:30:00 PM",
-  "Pause déjeuner - fin": "2:00:00 PM"
+  "Pause déjeuner - fin": "14:00:00 PM"
  },
  {
   "Horodateur": "31\/12\/2022 08:10:09",
@@ -231,10 +231,10 @@
   "Nombre d'animateurs par jour  [samedi]": 1,
   "Nombre d'animateurs par jour  [dimanche]": 1,
   "9h - 18h": "oui",
-  "Durée": 30,
-  "Temps intersession": 15,
-  "Pause déjeuner - début": "1:00:00 PM",
-  "Pause déjeuner - fin": "2:00:00 PM"
+  "Durée": "00:30:00",
+  "Temps intersession": "00:15:00",
+  "Pause déjeuner - début": "13:00:00 PM",
+  "Pause déjeuner - fin": "14:00:00 PM"
  },
  {
   "Horodateur": "02\/01\/2023 10:44:37",
@@ -249,10 +249,10 @@
   "Nombre d'animateurs par jour  [samedi]": 2,
   "Nombre d'animateurs par jour  [dimanche]": 2,
   "9h - 18h": "oui",
-  "Durée": 30,
-  "Temps intersession": 15,
+  "Durée": "00:30:00",
+  "Temps intersession": "00:15:00",
   "Pause déjeuner - début": "12:00:00 PM",
-  "Pause déjeuner - fin": "1:00:00 PM"
+  "Pause déjeuner - fin": "13:00:00 PM"
  },
  {
   "Horodateur": "02\/01\/2023 18:58:58",
@@ -267,8 +267,8 @@
   "Nombre d'animateurs par jour  [samedi]": 1,
   "Nombre d'animateurs par jour  [dimanche]": 1,
   "9h - 18h": "oui",
-  "Durée": 30,
-  "Temps intersession": 15,
+  "Durée": "00:30:00",
+  "Temps intersession": "00:15:00",
   "Pause déjeuner - début": "12:00:00 PM",
   "Pause déjeuner - fin": "12:00:00 PM"
  },
@@ -285,10 +285,10 @@
   "Nombre d'animateurs par jour  [samedi]": 2,
   "Nombre d'animateurs par jour  [dimanche]": 2,
   "9h - 18h": "oui",
-  "Durée": 45,
-  "Temps intersession": 15,
+  "Durée": "00:45:00",
+  "Temps intersession": "00:15:00",
   "Pause déjeuner - début": "12:30:00 PM",
-  "Pause déjeuner - fin": "1:30:00 PM"
+  "Pause déjeuner - fin": "13:30:00 PM"
  },
  {
   "Horodateur": "03\/01\/2023 12:19:14",
@@ -303,10 +303,10 @@
   "Nombre d'animateurs par jour  [samedi]": 4,
   "Nombre d'animateurs par jour  [dimanche]": 4,
   "9h - 18h": "oui",
-  "Durée": 30,
+  "Durée": "00:30:00",
   "Temps intersession": 0,
-  "Pause déjeuner - début": "1:00:00 PM",
-  "Pause déjeuner - fin": "2:00:00 PM"
+  "Pause déjeuner - début": "13:00:00 PM",
+  "Pause déjeuner - fin": "14:00:00 PM"
  },
  {
   "Horodateur": "03\/01\/2023 14:07:49",
@@ -321,10 +321,10 @@
   "Nombre d'animateurs par jour  [samedi]": 2,
   "Nombre d'animateurs par jour  [dimanche]": 2,
   "9h - 18h": "oui",
-  "Durée": 30,
+  "Durée": "00:30:00",
   "Temps intersession": 0,
-  "Pause déjeuner - début": "1:00:00 PM",
-  "Pause déjeuner - fin": "1:15:00 PM"
+  "Pause déjeuner - début": "13:00:00 PM",
+  "Pause déjeuner - fin": "13:15:00 PM"
  },
  {
   "Horodateur": "04\/01\/2023 14:07:11",
@@ -339,10 +339,10 @@
   "Nombre d'animateurs par jour  [samedi]": 2,
   "Nombre d'animateurs par jour  [dimanche]": 2,
   "9h - 18h": "oui",
-  "Durée": 30,
-  "Temps intersession": 15,
-  "Pause déjeuner - début": "1:00:00 PM",
-  "Pause déjeuner - fin": "2:00:00 PM"
+  "Durée": "00:30:00",
+  "Temps intersession": "00:15:00",
+  "Pause déjeuner - début": "13:00:00 PM",
+  "Pause déjeuner - fin": "14:00:00 PM"
  },
  {
   "Horodateur": "04\/01\/2023 23:43:58",
@@ -357,10 +357,10 @@
   "Nombre d'animateurs par jour  [samedi]": 3,
   "Nombre d'animateurs par jour  [dimanche]": 3,
   "9h - 18h": "oui",
-  "Durée": 60,
-  "Temps intersession": 15,
+  "Durée": "00:60:00",
+  "Temps intersession": "00:15:00",
   "Pause déjeuner - début": "12:00:00 PM",
-  "Pause déjeuner - fin": "1:30:00 PM"
+  "Pause déjeuner - fin": "13:30:00 PM"
  },
  {
   "Horodateur": "05\/01\/2023 13:56:36",
@@ -375,10 +375,10 @@
   "Nombre d'animateurs par jour  [samedi]": 2,
   "Nombre d'animateurs par jour  [dimanche]": 2,
   "9h - 18h": "oui",
-  "Durée": 60,
-  "Temps intersession": 15,
+  "Durée": "00:60:00",
+  "Temps intersession": "00:15:00",
   "Pause déjeuner - début": "12:30:00 PM",
-  "Pause déjeuner - fin": "1:30:00 PM"
+  "Pause déjeuner - fin": "13:30:00 PM"
  },
  {
   "Horodateur": "06\/01\/2023 14:54:19",
@@ -393,10 +393,10 @@
   "Nombre d'animateurs par jour  [samedi]": 2,
   "Nombre d'animateurs par jour  [dimanche]": 2,
   "9h - 18h": "oui",
-  "Durée": 30,
-  "Temps intersession": 15,
+  "Durée": "00:30:00",
+  "Temps intersession": "00:15:00",
   "Pause déjeuner - début": "12:00:00 PM",
-  "Pause déjeuner - fin": "1:00:00 PM"
+  "Pause déjeuner - fin": "13:00:00 PM"
  },
  {
   "Horodateur": "06\/01\/2023 16:09:41",
@@ -411,10 +411,10 @@
   "Nombre d'animateurs par jour  [samedi]": 1,
   "Nombre d'animateurs par jour  [dimanche]": 1,
   "9h - 18h": "oui",
-  "Durée": 30,
+  "Durée": "00:30:00",
   "Temps intersession": 0,
   "Pause déjeuner - début": "12:00:00 PM",
-  "Pause déjeuner - fin": "1:00:00 PM"
+  "Pause déjeuner - fin": "13:00:00 PM"
  },
  {
   "Horodateur": "06\/01\/2023 17:15:38",
@@ -429,10 +429,10 @@
   "Nombre d'animateurs par jour  [samedi]": 1,
   "Nombre d'animateurs par jour  [dimanche]": 1,
   "9h - 18h": "oui",
-  "Durée": 30,
-  "Temps intersession": 15,
+  "Durée": "00:30:00",
+  "Temps intersession": "00:15:00",
   "Pause déjeuner - début": "12:30:00 PM",
-  "Pause déjeuner - fin": "1:30:00 PM"
+  "Pause déjeuner - fin": "13:30:00 PM"
  },
  {
   "Horodateur": "1\/7\/2023 18:57:39",
@@ -447,10 +447,10 @@
   "Nombre d'animateurs par jour  [samedi]": 1,
   "Nombre d'animateurs par jour  [dimanche]": 1,
   "9h - 18h": "oui",
-  "Durée": 30,
+  "Durée": "00:30:00",
   "Temps intersession": 0,
   "Pause déjeuner - début": "12:30:00 PM",
-  "Pause déjeuner - fin": "2:00:00 PM"
+  "Pause déjeuner - fin": "14:00:00 PM"
  }
 ],
 "Explications":[
