@@ -1,3 +1,8 @@
+<?php
+$nom = "Nom ";
+$prenom = "Prenom";
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,7 +16,7 @@
         <img src="../images/user-modified.png" alt="Profile Picture">
       </div>
       <div class="profile-header-info">
-        <h1>Nom Prénom</h1>
+        <h1><?php echo $nom; echo $prenom;?></h1>
       </div>
     </div>
     <div class="profile-nav">
