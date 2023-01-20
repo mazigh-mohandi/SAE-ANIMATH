@@ -91,6 +91,39 @@ class Model
     }
     
     
+
+
+    public function formulaire_expo($nom,$ho,$hf,$cap,$niv,$duree)
+    {
+        $id_expo=1;
+        
+        $i=1;
+        while ($i==1)
+        {
+            $id_expo_Exist = $this->bd->prepare("SELECT id_expo FROM Exposants WHERE id_expo = :id_expo");
+            
+            $id_expo_Exist->bindValue(':id_expo', $id_expo, PDO::PARAM_INT);
+            $id_expo_Exist->execute();
+            
+            
+            $i= $id_expo_Exist->rowCount();
+            
+            if($i == 1)
+            {
+                $id_expo++;
+            }
+            else
+            {              
+                $req=  $this->bd->prepare("INSERT INTO Exposants SET id_expo='$id_expo',nomExposant='$nom',heure_ouvert='$ho',heure_ferme='$hf',capacite='$cap',niveau='$niv',duree='$duree'");
+                $req->execute();
+                $i=2;
+            }
+        
+            
+        }
+    }
+
+
     
     public function connexion($email,$mdp)
 
@@ -148,62 +181,6 @@ class Model
             }
         
     }
-
-    public function alimenter_creneaux()
-    {   $i=1;
-        $ligne=$this->bd->prepare("SELECT id_stand FROM Stand ");
-        $ligne->execute();
-        
-       
-        
-        while($i<$ligne->rowCount())
-        {
-            $recup_data=  $this->bd->prepare("SELECT * FROM Stand WHERE id_stand='$i'");
-            $recup_data->execute();
-            $tab=$recup_data->fetch(PDO::FETCH_BOTH);
-            $inters= strtotime(date("00:00:00")); 
-            $h_deb= strtotime(date("09:00:00")); 
-            $h_fin= strtotime(date("00:00:00")); 
-            
-            while($h_fin<=strtotime($tab["deb_dej"])) 
-                {
-                    $a=0;
-                    $h_deb=strtotime($h_deb)+strtotime($tab["inters"]);
-                    $h_fin=strtotime($h_deb)+strtotime($tab["duree"]);
-                    while($a<=$tab["nbex_j"])
-                    {$b=0;
-                        while ($b==1)
-                            {
-                                $id_creneaux_Exist = $this->bd->prepare("SELECT id_creneaux FROM Creneaux WHERE id_creneaux = :creneaux");
-            
-                                $id_creneaux_Exist->bindValue(':id_creneaux', $id_creneaux, PDO::PARAM_INT);
-                                $id_creneaux_Exist->execute();
-            
-            
-                                $b= $id_creneaux_Exist->rowCount();
-            
-                                if($b == 1)
-                                    {
-                                        $id_creneaux++;
-                                    }
-                                else
-                                    {              
-                                        $creneau=$this->bd->prepare("INSERT INTO Creneaux SET id_creneaux='$id_creneaux',journee='jeudi',heure_debut ='$h_deb',
-                                         heure_fin='$h_fin'");
-                                        $creneau->execute();
-                                        $b=2;
-                                     }
-        
-                                
-                            }
-                        $a++;
-                    }
-        $i++; 
-        }
-        
-        
-    }
-}
 }
 ?>
 
