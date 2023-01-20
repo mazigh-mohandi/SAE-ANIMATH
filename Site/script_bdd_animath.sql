@@ -16,7 +16,7 @@ CREATE TABLE Profs
         niveau VARCHAR (50),
         ville VARCHAR(50),
         mail VARCHAR(50),
-        mdp VARCHAR(5000)
+        mdp VARCHAR(50)
     );
 
 CREATE TABLE Classes
@@ -32,7 +32,7 @@ CREATE TABLE Superviseurs
         nomSuper VARCHAR (20),
         prenomSuper VARCHAR(30),
         mail VARCHAR(50),
-        mdp VARCHAR(5000)
+        mdp VARCHAR(10)
     );
 
 CREATE TABLE Exposants

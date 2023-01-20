@@ -8,9 +8,50 @@
       <link rel="stylesheet" href="style.css">
 </head>
 <body>
-      <h1>Inscription</h1>
-      <a href="../Inscription(prof)/Inscription(prof).php"><button type="button" class="bouton" >Je suis un Professeur</button></a>
-      <a href="../Inscription(super)/Inscription(super).php"><button type="button" class="bouton" > Je suis un Superviseur</button></a>
+      <div class="content">
+            <h4><a href ="../Accueil/Accueil.php" class="home-link">Revenir à la page d'accueil</a></h4>
+
+            <h1 class="page-title">Avant de continuer...</h1>
       
+            <p class="description">Les inscriptions sont réservées aux <strong class="highlight">superviseurs</strong> et aux <strong class="highlight">professeurs</strong> souhaitant réserver des créneaux horaires sur la journée de jeudi ou celle de vendredi</p>
+            
+            <!-- Partie élèves/exposants -->
+            <h3 class="sub-title">Vous êtes un élève ou un exposant</h3>
+            <ul class="list">
+            <li class="list-item">Vous êtes un <strong class="highlight">exposant</strong>: veuillez vous référer à votre superviseur afin d'avoir accès à toutes les informations vous concernant au sujet de l'évènement (horaires de stand,...).</li>
+            <li class="list-item">Vous êtes un <strong class="highlight">élève</strong>: veuillez vous référer à votre enseignant accompagnateur afin d'obtenir plus de détails sur les différentes activités réservées.</li> 
+            </ul>
+            
+
+            <!-- Partie profs/superviseurs-->
+            <h3 class="sub-title">Vous êtes Professeur ou Superviseur</h3>
+
+            <p class="description">Suite à votre inscription, vous aurez accès à différentes fonctionnalités afin de vous préparer au mieux pour cet évènement.</p>
+            
+            <ul class="list"><span>En tant que <strong class="highlight">Superviseur</strong>, vous pourrez : </span><br><br>
+                  <li class="list-item">réserver des créneaux pour vos exposants</li>
+                  <li class="list-item">consulter la liste des participants de l'évènement</li>
+                  <li class="list-item">créer des comptes pour vos exposants</li>
+                  <li class="list-item">gérer les réservations relatives à vos exposants</li>  <br>
+            </ul>
+      
+            <ul class="list"><span>En tant que <strong class="highlight">Professeur</strong>, vous pourrez :</span><br><br>
+                  <li class="list-item">réserver des créneaux d'activité pour vos élèves</li>
+                  <li class="list-item">gérer et consulter vos réservations</li>
+            </ul>
+      
+            <h3 class="warning">&#9888; Points de vigilence lors de l'inscription:</h3>
+            <ul class="list">
+                  <li class="list-item"><strong class="highlight">TOUS</strong> les champs à remplir sont <strong class="highlight">obligatoires</strong></li>
+                  <li class="list-item">afin de valider votre inscription, vous devrez accepter les <a href="../CGU/CGU.html" class="link">Conditions d'utilisation</a> de notre site</li>
+            </ul>
+      
+            <p class="form-title">Veuillez sélectionner votre rôle:</p>
+      
+            <a href="../Inscription(prof)/Inscription(prof).php"><button type="button" class="button" >Je suis un Professeur</button></a>
+            <a href="../Inscription(super)/Inscription(super).php"><button type="button" class="button" > Je suis un Superviseur</button></a>
+      
+            <p class="login-link">Vous avez déjà un compte ? <a href="../Connexion/Connexion.php" class="link">Se connecter</a></p>
+      </div>      
 </body>
 </html>

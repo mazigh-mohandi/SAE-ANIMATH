@@ -19,7 +19,6 @@ body {
     height: 65px;
 }
 
-
 *{
     margin: 0;
     padding: 0;
@@ -31,17 +30,22 @@ body {
 .container2{
     position: absolute;
     margin-left: 60%;
-    margin-top: 20px;
-    width: 450px;
-    height: 750px;
+    margin-bottom: 5px ;
+    margin-top: 70px; ;
+    width: 520px;
+    height: 450px;
     background-color: rgb(255, 255, 255);
 }
 
 .container2 h1{
     color: rgb(2, 2, 2);
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: 50px;
-    font-size: 30;
+}
+.container2 p{
+    color: rgb(2, 2, 2);
+    margin-top: 40px;
+    margin-left: 50px;
 }
 .container2 h4{
     margin-top: 20px;
@@ -55,12 +59,11 @@ body {
 
 
 
-.form input{
+input{
     margin-left: 50px;
     margin-top: 20px;
-    outline: 0;
     width: 320px;
-    height: 32px;
+    height: 47px;
     background-color: rgb(255, 247, 247);
     border-radius: 3px;
     border: 1px solid#000;
@@ -68,18 +71,6 @@ body {
     padding : 5px;
 }
 
-   
-
-.c1 a{ 
-    position: absolute;
-    margin-top: 40px;
-    font-size: 15px;
-    margin-left: 55px;
-    text-decoration: none;
-    color: rgb(22, 83, 212);
-    
-
-}
 
 input::placeholder{
     font-size: 17px;
@@ -97,33 +88,8 @@ input[type=submit]{
     margin-top: 40px;
 }
 
-
-.cg{
-    position: absolute;
-    margin-top: 30px;
-    font-size: 15px;
-    margin-left: 55px;
-}
-
-
-
-.content{
-    position: absolute;
-    margin-top: 80px;
-    font-size: 9px;
-    margin-left: 55px;
-}
-
-.content p{
-    color: rgb(125, 119, 119);
-    font-size: 15px;
-}
-.content a  {
-    text-decoration: none;
-    color: rgb(22, 83, 212);
-}
-
-
 .err{
     color: #FF0000;
 }
+
+

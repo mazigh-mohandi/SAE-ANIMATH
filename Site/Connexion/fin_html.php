@@ -1,11 +1,7 @@
 
-                <div class="logo">
-                    <a href="accueil.html"><img src="../images/logo.png" alt="Logo Animath"></a>
-                </div>  
-        
         </div>
         <div class="container2">
-            <h4><a href =../accueil/accueil.html>Revenir à la page d'accueil</a></h4>
+            <h4><a href =../Accueil/accueil.php>Revenir à la page d'accueil</a></h4>
             <h1>Se connecter</h1>
             <!-- J'ai rajouté deux <span class="err"> pour gérer les erreurs en php -->
             <form action="Connexion.php" method="POST">
@@ -19,7 +15,7 @@
             </form>
 
                 <div class="c1">
-                    <p><a href ="Mot de passe oublié.php"> Mot de passe oublié ? </a></p>
+                    <p><a href ="../Mot_de_passe_oublié/mot_passe_oublie.php"> Mot de passe oublié ? </a></p>
                 </div>
 
                 <div class="content">

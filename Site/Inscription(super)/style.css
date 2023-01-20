@@ -19,13 +19,6 @@ body {
     height: 65px;
 }
 
-.logo img{
-    height: 80px;
-    width: 150px;
-    margin-left: 5px;
-  
-}
-
 *{
     margin: 0;
     padding: 0;
@@ -37,9 +30,9 @@ body {
 .container2{
     position: absolute;
     margin-left: 60%;
-    margin-top: -72px;
+    margin-top : 13px;
     width: 440px;
-    height: 700px;
+    height: 620px;
     background-color: rgb(255, 255, 255);
 }
 
@@ -109,6 +102,9 @@ input[type=submit]{
     margin-top: 30px;
     font-size: 15px;
     margin-left: 55px;
+}
+.cg a span {
+     font-size : 13px;
 }
 
 

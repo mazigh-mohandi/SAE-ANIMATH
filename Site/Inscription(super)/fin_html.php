@@ -1,6 +1,4 @@
-<div class="logo">
-    <a href="../Accueil/Accueil.html"><img src="../images/logo.png" alt="Logo Animath"></a>
-</div>  
+
 
 <div class="container2">
     <h4><a href ="../Accueil/Accueil.html">Revenir à la page d'accueil</a></h4>
@@ -26,7 +24,8 @@
 
             <div class="cg">
                 <input type="checkbox" id="conditions" name="cgu" value="conditions">
-                <label for="conditions"><span>J'ai lu et j'accepte les conditions d'utilisation</span></label>
+                <label for="conditions"><span>J'ai lu et j'accepte les conditions d'utilisation</span></label><br>
+                <a href="../CGU/CGU.html"><span>Conditions générales d'utilisation</a></span><br>
                 <span class="err"><?php echo $cguErr;?></span>
                 
             </div>
