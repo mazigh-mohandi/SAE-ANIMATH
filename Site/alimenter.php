@@ -27,7 +27,7 @@ function getIDStand($nom){
     return $heures * 60 + $minutes; 
 } 
 
-// Transform minutes like "105" into hours like "1:45". 
+
 function minutes_en_Heures($minutes) 
 { 
     $heures = (int)($minutes / 60); 
